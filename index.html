@@ -1,9 +1,9 @@
  <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Ateendriyay Technologies</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,26 +15,30 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
+  <div class="w3-container w3-display-container w3-padding-16 w3-center">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>LOGO</b></h3>
+    <img src="./images/logo.svg" alt="logo" width="60%" height="auto"> 	
+    <!--<h3 class="w3-wide">LOGO</h3> -->
   </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Shirts</a>
-    <a href="#" class="w3-bar-item w3-button">Dresses</a>
+  <div class="w3-padding-32 w3-large w3-text-grey" style="font-weight:bold">
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Jeans <i class="fa fa-caret-down"></i>
+       Mathematics <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-      <a href="#" class="w3-bar-item w3-button">Straight</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Linear Algebra</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Probability</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Statistics</a>  
     </div>
-    <a href="#" class="w3-bar-item w3-button">Jackets</a>
-    <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-    <a href="#" class="w3-bar-item w3-button">Blazers</a>
-    <a href="#" class="w3-bar-item w3-button">Shoes</a>
+    <a href="#" class="w3-bar-item w3-button">Image Processing</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Machine Learning <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Beginner</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Medium</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Advanced</a>  
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Embedded</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
@@ -57,8 +61,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
   <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">Jeans</p>
+  <header class="w3-container w3-xlarge w3-black">
+    <h1 class="w3-left w3-text-white w3-xxlarge">Ateendriyay Technologies</h1>
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
@@ -67,12 +71,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="./images/jeans.jpg" alt="Jeans" style="width:100%">
+    <img src="./images/technology.jpg" alt="Technology" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+      <!--<h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
       <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-      <h1 class="w3-hide-small">COLLECTION 2016</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+      <h1 class="w3-hide-small">COLLECTION 2016</h1> -->
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">START LEARNING</a></p>
     </div>
   </div>
 
@@ -82,34 +86,36 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Product grid -->
   <div class="w3-row w3-grayscale">
-    <div class="w3-col l3 s6">
+    <div class="w3-col l6 s6">
       <div class="w3-container">
-        <img src="./images/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+        <a href="first.html"><img src="./images/maths.jpg" style="width:100%"></a>
+        <p>Mathematics</p>
       </div>
       <div class="w3-container">
-        <img src="./images/jeans2.jpg" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        <img src="./images/image_proc2.jpg" style="width:100%">
+        <p>Image Processing</p>
       </div>
     </div>
 
-    <div class="w3-col l3 s6">
+    <div class="w3-col l6 s6">
       <div class="w3-container">
         <div class="w3-display-container">
-          <img src="./images/jeans2.jpg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">New</span>
+          <img src="./images/machine_learn.jpg" style="width:100%">
+         <!-- <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
             <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+	
           </div>
+	-->
         </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+        <p>Machine Learning</p>
       </div>
       <div class="w3-container">
-        <img src="./images/jeans3.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+        <img src="./images/embedded.jpg" style="width:100%">
+        <p>Embedded<br></p>
       </div>
     </div>
-
+<!--
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <img src="./images/jeans3.jpg" style="width:100%">
@@ -126,7 +132,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
       </div>
     </div>
-
+    
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <img src="./images/jeans4.jpg" style="width:100%">
@@ -137,6 +143,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
       </div>
     </div>
+    -->
   </div>
 
   <!-- Subscribe section -->
@@ -177,9 +184,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
       <div class="w3-col s4 w3-justify">
         <h4>Store</h4>
-        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-map-marker"></i> Ateendriyay Technologies</p>
         <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ateendriyay@gmail.com</p>
         <h4>We accept</h4>
         <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
         <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
