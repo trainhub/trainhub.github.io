@@ -21,24 +21,31 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <!--<h3 class="w3-wide">LOGO</h3> -->
   </div>
   <div class="w3-padding-32 w3-large w3-text-grey" style="font-weight:bold">
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="myAccFunc('mathAcc')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
        Mathematics <i class="fa fa-caret-down"></i>
     </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <div id="mathAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Linear Algebra</a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Probability</a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Statistics</a>  
     </div>
     <a href="#" class="w3-bar-item w3-button">Image Processing</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="myAccFunc('imgAcc')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Machine Learning <i class="fa fa-caret-down"></i>
     </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <div id="imgAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Beginner</a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Medium</a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Advanced</a>  
     </div>
-    <a href="#" class="w3-bar-item w3-button">Embedded</a>
+    <a onclick="myAccFunc('embAcc')" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Embedded <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="embAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Arduino</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>PIC</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-caret-right w3-margin-right"></i>Raspberry PI</a>  
+    </div>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
@@ -221,8 +228,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 <script>
 // Accordion 
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
+function myAccFunc(id) {
+    var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
